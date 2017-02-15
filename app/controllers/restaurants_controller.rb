@@ -25,7 +25,7 @@ def edit
 end
 
 def update
-  @restaurant.update(restaurant_params)
+  if @restaurant.update(restaurant_params)
   redirect_to restaurant_path(@restaurant)
 end
 
